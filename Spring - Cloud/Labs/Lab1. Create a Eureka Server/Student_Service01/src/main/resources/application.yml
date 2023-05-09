@@ -1,0 +1,18 @@
+
+spring:
+  application:
+    name: service01
+#Discovery Service Access
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    prefer-ip-address: true
+    metadata-map:
+      instanceId: ${spring.application.name}:${spring.application.instance_id}:${random.value}
+    lease-renewal-interval-in-seconds: 100
+    lease-expiration-duration-in-seconds: 200
+
+server:
+  port: 8081

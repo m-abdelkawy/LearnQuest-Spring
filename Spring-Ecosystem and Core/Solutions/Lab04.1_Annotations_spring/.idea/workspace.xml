@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9cc46423-eea2-4380-9818-eb7d5dc33936" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../Spring - Cloud/Labs/Lab1. Create a Eureka Server/Student_Service01/src/main/java/com/student/Mountain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Spring - Cloud/Labs/Lab1. Create a Eureka Server/Student_Service01/src/main/java/com/student/MountainDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../revision/student/src/main/java/com/student/core/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../revision/student/src/main/java/com/student/dao/StudentDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../revision/student/src/main/java/com/student/dao/StudentDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../revision/student/src/main/java/com/student/service/StudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../revision/student/src/main/java/com/student/service/StudentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../revision/student/src/main/resources/beans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../revision/student/src/test/java/com/student/service/StudentServiceTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="2OZ85UK9TCMQWmLIbEhLMYansXp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/dev/LearnQuest-Spring/Spring-Ecosystem and Core/Solutions/Lab04.1_Annotations_spring/StudentApplication"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9cc46423-eea2-4380-9818-eb7d5dc33936" name="Changes" comment="" />
+      <created>1681756560984</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1681756560984</updated>
+      <workItem from="1681756562461" duration="20000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
