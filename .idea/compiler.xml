@@ -6,13 +6,23 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="StudentApplication" />
+        <module name="springboot_student (1)" />
+        <module name="springboot_student" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="course1-spring-ecosystem-core-parent" target="1.5" />
+      <module name="course2-module1-parent" target="1.5" />
+      <module name="course2-spring-mvc-boot-restcontrollers-parent" target="1.5" />
+      <module name="learnquest-spring-parent" target="11" />
+      <module name="StudentApplication" target="11" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="StudentApplication" options="-parameters" />
+      <module name="springboot_student" options="-parameters" />
+      <module name="springboot_student (1)" options="-parameters" />
     </option>
   </component>
 </project>

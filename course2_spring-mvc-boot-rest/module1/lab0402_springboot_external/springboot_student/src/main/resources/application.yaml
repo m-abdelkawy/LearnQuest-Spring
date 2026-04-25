@@ -1,0 +1,9 @@
+student:
+  greeting: Hello from ${controller}
+
+controller: StudentController
+
+server:
+  port: 8082
+  servlet:
+    context-path: /college
