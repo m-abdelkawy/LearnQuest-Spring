@@ -3,10 +3,12 @@ package com.student.controller;
 import com.student.StudentProperties;
 import com.student.core.Student;
 import com.student.service.StudentService;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.inject.Inject;
 import java.util.Collection;
+import java.util.Map;
 import java.util.Optional;
 
 @RestController
@@ -18,7 +20,7 @@ public class StudentController {
     @Inject
     private StudentService studentService;
 
-    @GetMapping("/msg1")
+    @GetMapping("/greeting")
     public String getMessage() {
         return studentProperties.getGreeting();
     }
@@ -26,6 +28,11 @@ public class StudentController {
     @GetMapping("/msg")
     public String getHeader(@RequestHeader("user-agent") String userAgent) {
         return studentProperties.getGreeting() + ",   " + userAgent;
+    }
+
+    @GetMapping("/headers")
+    public String getHeaders(@RequestHeader Map<String, String> headers) {
+        return headers.toString();
     }
 
     @GetMapping
@@ -41,5 +48,12 @@ public class StudentController {
     @GetMapping("/single")
     public Student getSingleStudent(@RequestParam("id") Optional<Long> optionalLong) {
         return studentService.get(optionalLong.orElse(1L));
+    }
+
+    @GetMapping("/search/{department}")
+    public ResponseEntity<Collection<Student>> getStudentsPerDepartment(@PathVariable("department") String department
+            , @RequestParam("name") Optional<String> optionalName){
+        Collection<Student> lstStudents = studentService.getAllStudentsInDepartment(department, optionalName.orElse(""));
+        return ResponseEntity.ok(lstStudents);
     }
 }

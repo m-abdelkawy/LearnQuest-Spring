@@ -7,4 +7,5 @@ import java.util.Collection;
 public interface StudentService {
     Student get(long id);
     Collection<Student> getAllStudents();
+    Collection<Student> getAllStudentsInDepartment(String department, String lastNameLike);
  }
