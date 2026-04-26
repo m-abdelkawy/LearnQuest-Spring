@@ -10,7 +10,7 @@ import java.util.Map;
 @Named
 public class StudentDaoImpl implements StudentDao{
 
-    private Map<Long, Student> students;
+    private final Map<Long, Student> students;
     {
         students = new HashMap<>();
         students.put(1L, new Student(1L, "Eric", "Colbert", "English Literature", 145.00));
@@ -28,5 +28,12 @@ public class StudentDaoImpl implements StudentDao{
     @Override
     public Collection<Student> getAll() {
         return students.values();
+    }
+
+    @Override
+    public void addStudent(Student student){
+        long newId = students.keySet().stream().max(Long::compare).orElse(0L) + 1;
+        student.setId(newId);
+        students.put(newId, student);
     }
 }

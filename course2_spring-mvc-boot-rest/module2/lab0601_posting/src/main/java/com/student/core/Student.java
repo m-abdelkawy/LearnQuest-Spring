@@ -1,9 +1,17 @@
 package com.student.core;
 
+import org.springframework.validation.annotation.Validated;
+
+import javax.validation.constraints.NotBlank;
+
+@Validated
 public class Student {
     private long id;
+    @NotBlank
     private String firstName;
+    @NotBlank
     private String surname;
+    @NotBlank
     private String dept;
     private double fees;
 

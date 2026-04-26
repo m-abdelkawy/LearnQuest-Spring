@@ -31,4 +31,11 @@ public class StudentServiceImpl implements StudentService {
                 .filter(s -> s.getSurname().contains(lastname.toLowerCase()))
                 .collect(Collectors.toList());
     }
+
+    @Override
+    public void addStudent(Student student){
+        studentDao.addStudent(student);
+//        if(student.getFirstName() != null && student.getSurname() != null && student.getDept() != null){
+//        }
+    }
 }

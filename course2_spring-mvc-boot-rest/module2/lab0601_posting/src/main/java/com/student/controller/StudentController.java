@@ -4,9 +4,11 @@ import com.student.StudentProperties;
 import com.student.core.Student;
 import com.student.service.StudentService;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import javax.inject.Inject;
+import java.net.URI;
 import java.util.Collection;
 import java.util.Map;
 import java.util.Optional;
@@ -52,8 +54,19 @@ public class StudentController {
 
     @GetMapping("/search/{department}")
     public ResponseEntity<Collection<Student>> getStudentsPerDepartment(@PathVariable("department") String department
-            , @RequestParam("name") Optional<String> optionalName){
+            , @RequestParam("name") Optional<String> optionalName) {
         Collection<Student> lstStudents = studentService.getAllStudentsInDepartment(department, optionalName.orElse(""));
         return ResponseEntity.ok(lstStudents);
+    }
+
+    @PostMapping()
+    public ResponseEntity<String> addStudent(@RequestBody(required = true) @Validated Student student) {
+        studentService.addStudent(student);
+        if (student.getId() > 0) {
+            URI uri = URI.create("/college/student/" + student.getId());
+            return ResponseEntity.accepted().location(uri).build();
+        } else {
+            return ResponseEntity.badRequest().build();
+        }
     }
 }
