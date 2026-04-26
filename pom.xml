@@ -13,7 +13,8 @@
         <!--        <module>course1_spring_ecosystem_core/lab1_beans</module>-->
 
         <module>course2_spring-mvc-boot-rest/module1/lab0402_springboot_external/springboot_student</module>
-        <module>course2_spring-mvc-boot-rest/module2/lab0501_springboot_params/springboot_student</module>
+        <module>course2_spring-mvc-boot-rest/module2/lab0501_params</module>
+        <module>course2_spring-mvc-boot-rest/module2/lab0601_posting</module>
 
         <!-- add more as needed -->
     </modules>
