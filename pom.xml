@@ -15,6 +15,7 @@
         <module>course2_spring-mvc-boot-rest/module1/lab0402_springboot_external/springboot_student</module>
         <module>course2_spring-mvc-boot-rest/module2/lab0501_params</module>
         <module>course2_spring-mvc-boot-rest/module2/lab0601_posting</module>
+        <module>course2_spring-mvc-boot-rest/module2/lab0602_javaclient</module>
 
         <!-- add more as needed -->
     </modules>
