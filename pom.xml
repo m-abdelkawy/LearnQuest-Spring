@@ -17,6 +17,9 @@
         <module>course2_spring-mvc-boot-rest/module2/lab0601_posting</module>
         <module>course2_spring-mvc-boot-rest/module2/lab0602_javaclient</module>
 
+        <module>course2_spring-mvc-boot-rest/module2/Lab0603_content_negotiaion//lab0603_javaclient</module>
+        <module>course2_spring-mvc-boot-rest/module2/Lab0603_content_negotiaion/lab0603_student</module>
+
         <!-- add more as needed -->
     </modules>
 
