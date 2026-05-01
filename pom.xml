@@ -25,6 +25,9 @@
         <module>course2_spring-mvc-boot-rest/module2/Lab0604_angular_client/lab0604_javaclient</module>
         <module>course2_spring-mvc-boot-rest/module2/Lab0604_angular_client/lab0604_student</module>
 
+        <!--lab 0701-->
+        <module>course2_spring-mvc-boot-rest/module3/lab0701_controller</module>
+
         <!-- add more as needed -->
     </modules>
 
