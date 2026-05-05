@@ -32,6 +32,7 @@
         <!--course3_lab 0101-->
         <module>course3_spring_data_repositories/module1/lab0101_entitymanager</module>
         <module>course3_spring_data_repositories/module1/lab0102_web</module>
+        <module>course3_spring_data_repositories/module1/lab0201_spring_data</module>
     </modules>
 
 </project>
