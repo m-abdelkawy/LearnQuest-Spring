@@ -25,7 +25,12 @@ public class StudentServiceImpl implements StudentService {
 
     @Override
     public Collection<Student> getStudentsByDepartment(String department) {
-        return studentRepository.getAllByDept(department);
+        return studentRepository.getByDept(department);
+    }
+
+    @Override
+    public void save(Student student) {
+        studentRepository.save(student);
     }
 
 

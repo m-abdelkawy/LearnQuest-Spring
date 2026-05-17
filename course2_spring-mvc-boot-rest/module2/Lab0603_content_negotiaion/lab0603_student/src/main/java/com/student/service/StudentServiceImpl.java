@@ -1,7 +1,7 @@
 package com.student.service;
 
 import com.student.core.Student;
-import com.student.dao.StudentDao;
+import com.student.repository.StudentDao;
 
 import javax.inject.Inject;
 import javax.inject.Named;
