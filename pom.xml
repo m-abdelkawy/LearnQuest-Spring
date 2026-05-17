@@ -37,6 +37,8 @@
         <module>course3_spring_data_repositories/module1/lab0203_spring_data_rest</module>
         <module>course3_spring_data_repositories/module1/lab0204_spring_data_projection</module>
         <module>course3_spring_data_repositories/module1/lab0205_spring_data_posting</module>
+
+        <module>course3_spring_data_repositories/module2/lab0301_spring_aop</module>
     </modules>
 
 </project>
