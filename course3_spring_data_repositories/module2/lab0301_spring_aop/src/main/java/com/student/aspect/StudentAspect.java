@@ -17,6 +17,7 @@ public class StudentAspect {
 
     /**
      * a pointcut to intercept any class method in the service package with any arguments
+     * defines the joinpoint
      */
     @Pointcut("execution(* com.student.service.*.*(..))")
     public void log(){
