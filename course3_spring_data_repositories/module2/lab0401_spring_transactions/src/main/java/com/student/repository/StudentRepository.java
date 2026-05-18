@@ -1,0 +1,20 @@
+package com.student.repository;
+
+import com.student.core.Student;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.Collection;
+
+//@RepositoryRestResource(collectionResourceRel = "students", path = "enrollments", excerptProjection = Person.class)
+//@RepositoryRestResource(collectionResourceRel = "students", path = "enrollments")
+public interface StudentRepository extends JpaRepository<Student, Long> {
+    @Query("SELECT student FROM Student student where student.dept = :dept")
+    Collection<Student> getByDept(@Param("dept") String department);
+
+    @Transactional(propagation = Propagation.REQUIRES_NEW)
+    Student save(Student entity);
+}

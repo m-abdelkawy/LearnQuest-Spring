@@ -40,6 +40,7 @@
 
         <module>course3_spring_data_repositories/module2/lab0301_spring_aop</module>
         <module>course3_spring_data_repositories/module2/lab0302_spring_around</module>
+        <module>course3_spring_data_repositories/module2/lab0401_spring_transactions</module>
     </modules>
 
 </project>
