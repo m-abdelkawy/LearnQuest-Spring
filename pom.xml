@@ -41,6 +41,9 @@
         <module>course3_spring_data_repositories/module2/lab0301_spring_aop</module>
         <module>course3_spring_data_repositories/module2/lab0302_spring_around</module>
         <module>course3_spring_data_repositories/module2/lab0401_spring_transactions</module>
+
+<!--        course4_spring_cloud-->
+        <module>course4_spring_cloud/module1/lab0201_student_eurekaServer</module>
     </modules>
 
 </project>

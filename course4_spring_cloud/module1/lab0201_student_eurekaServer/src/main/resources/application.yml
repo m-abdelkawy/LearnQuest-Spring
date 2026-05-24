@@ -1,0 +1,11 @@
+# Configure the discovery service
+eureka:
+  instance:
+    hostname: localhost
+  client: # Not a client, do not register with yourself
+    registerWithEureka: false
+    fetchRegistry: false
+
+
+server:
+  port: 1111
