@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: mountain-service
+
+# Discovery Server Access
+eureka:
+  client:
+    service-url:
+        defaultZone: http://localhost:8761/eureka/ #register with DNS to running Eureka service
+  instance:
+    prefer-ip-address: true # register the ip address rather than the host name
+    metadata-map:
+        instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}} # the random value is in case we have more than one instance of the service via scaling
+    lease-renewal-interval-in-seconds: 30
+    lease-expiration-duration-in-seconds: 90
+
+# http server
+server:
+  port: 8082 # Http (tomcat) port

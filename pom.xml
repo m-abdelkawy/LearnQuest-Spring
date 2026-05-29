@@ -44,6 +44,7 @@
 
 <!--        course4_spring_cloud-->
         <module>course4_spring_cloud/module1/lab0201_student_eurekaServer</module>
+        <module>course4_spring_cloud/module1/lab0202_register_service</module>
     </modules>
 
 </project>
