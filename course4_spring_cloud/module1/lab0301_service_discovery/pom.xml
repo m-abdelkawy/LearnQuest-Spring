@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.mountain</groupId>
-    <artifactId>lab0202_register_service</artifactId>
+    <artifactId>lab0301_service_discovery</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>lab0202_register_service</name>
+    <name>lab0301_service_discovery</name>
     <description>Demo registering service with Eureka server</description>
     <properties>
         <java.version>11</java.version>
@@ -37,11 +37,6 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-loadbalancer</artifactId>
         </dependency>
 
     </dependencies>

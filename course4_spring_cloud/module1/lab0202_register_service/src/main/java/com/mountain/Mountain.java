@@ -5,6 +5,7 @@ public class Mountain {
     private String name;
     private String range;
     private String country;
+    private String firstAscent;
 
     public Mountain() {
         super();
@@ -47,5 +48,13 @@ public class Mountain {
 
     public void setCountry(String country) {
         this.country = country;
+    }
+
+    public String getFirstAscent() {
+        return firstAscent;
+    }
+
+    public void setFirstAscent(String firstAscent) {
+        this.firstAscent = firstAscent;
     }
 }

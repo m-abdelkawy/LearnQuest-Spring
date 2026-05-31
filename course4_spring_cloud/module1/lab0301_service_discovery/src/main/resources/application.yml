@@ -1,12 +1,12 @@
 spring:
   application:
-    name: mountain-service
+    name: mountain-service02
 
-# Discovery Server Access
+# Discovery server access
 eureka:
   client:
     service-url:
-        defaultZone: http://localhost:8761/eureka/ #register with DNS to running Eureka service
+      defaultZone: http://localhost:8761/eureka/ #register with DNS to running Eureka service
   instance:
     prefer-ip-address: true # register the ip address rather than the host name
     metadata-map:
@@ -16,9 +16,4 @@ eureka:
 
 # http server
 server:
-  port: 8082 # Http (tomcat) port
-#
-#mountain-service02:
-#  ribbon:
-#    DeploymentContextBasedVipAddress: mountainService02
-#    NIWSServerListClassName: com.netflix.niws.loadbalancer.DiscoveryEnabledNIWSServerList
+  port: 8083 # Http (tomcat) port
