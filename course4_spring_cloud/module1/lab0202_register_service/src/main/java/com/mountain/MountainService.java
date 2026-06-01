@@ -19,9 +19,9 @@ import java.util.Optional;
 @SpringBootApplication
 @EnableDiscoveryClient
 @RestController
-public class MountainService01 {
+public class MountainService {
     public static void main(String[] args) {
-        SpringApplication.run(MountainService01.class, args);
+        SpringApplication.run(MountainService.class, args);
     }
 
     @RequestMapping("/")
@@ -43,7 +43,7 @@ public class MountainService01 {
     public ResponseEntity<Mountain> get(@PathVariable("id") long id){
         Optional<Mountain> mountainOptional = dao.get(id);
         if(mountainOptional.isPresent()){
-            String url = "http://mountain-service02/{id}";
+            String url = "http://ascent-service/{id}";
             String str = this.restTemplate().getForObject(url, String.class, id);
             mountainOptional.get().setFirstAscent(str);
         }

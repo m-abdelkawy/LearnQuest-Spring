@@ -1,6 +1,6 @@
 spring:
   application:
-    name: mountain-service02
+    name: ascent-service
 
 # Discovery server access
 eureka:
