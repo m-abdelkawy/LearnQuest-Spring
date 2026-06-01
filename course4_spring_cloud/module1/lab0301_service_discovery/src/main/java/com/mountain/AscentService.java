@@ -11,9 +11,9 @@ import javax.inject.Inject;
 
 @SpringBootApplication
 @RestController
-public class MountainService02 {
+public class AscentService {
     public static void main(String[] args) {
-        SpringApplication.run(MountainService02.class, args);
+        SpringApplication.run(AscentService.class, args);
     }
 
     @RequestMapping("/")
