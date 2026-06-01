@@ -18,7 +18,7 @@ public class AscentService {
 
     @RequestMapping("/")
     public String index() {
-        return "This is the spring boot Service02 application";
+        return "This is the spring boot AscentService01 application";
     }
 
     @Inject
