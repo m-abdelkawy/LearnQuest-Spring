@@ -47,6 +47,7 @@
         <module>course4_spring_cloud/module1/lab0202_register_service</module>
         <module>course4_spring_cloud/module1/lab0301_service_discovery</module>
         <module>course4_spring_cloud/module1/lab0302_load_balancing</module>
+        <module>course4_spring_cloud/module2/lab0401_api_gateway</module>
     </modules>
 
 </project>

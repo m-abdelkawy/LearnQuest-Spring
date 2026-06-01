@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: edge
+  cloud:
+    gateway:
+      routes:
+        - id: mountain-service
+          uri: lb://mountain-service
+          predicates:
+            - Path=/mtn/**
+
+server:
+  port: 8080
+
+eureka:
+  client:
+    service-url:
+        defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+    metadata-map:
+        instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+    lease-renewal-interval-in-seconds: 30
+    lease-expiration-duration-in-seconds: 90

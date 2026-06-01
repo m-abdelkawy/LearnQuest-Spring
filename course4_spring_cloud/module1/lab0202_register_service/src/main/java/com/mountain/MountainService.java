@@ -51,6 +51,19 @@ public class MountainService {
                 .orElse(ResponseEntity.notFound().build());
     }
 
+    @GetMapping(value = "/mtn/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<Mountain> get2(@PathVariable("id") long id){
+        System.out.println("called from the API gateway");
+        Optional<Mountain> mountainOptional = dao.get(id);
+        if(mountainOptional.isPresent()){
+            String url = "http://ascent-service/{id}";
+            String str = this.restTemplate().getForObject(url, String.class, id);
+            mountainOptional.get().setFirstAscent(str);
+        }
+        return mountainOptional.map(ResponseEntity::ok)
+                .orElse(ResponseEntity.notFound().build());
+    }
+
     @Bean
     @LoadBalanced
     RestTemplate restTemplate(){
